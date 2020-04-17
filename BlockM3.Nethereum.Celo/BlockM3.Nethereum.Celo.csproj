@@ -2,8 +2,21 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard1.1;netstandard2.0;net451;netcoreapp2.1;netcoreapp3.1</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>BlockM3.Nethereum.Celo</PackageId>
+    <Authors>Máximo Piva</Authors>
+    <Company>Block M3</Company>
+    <Product>BlockM3.Nethereum.Celo</Product>
+    <Description>Nethereum Extension Library Supporting Celo Network</Description>
+    <PackageProjectUrl>https://github.com/block-m3/BlockM3.Nethereum.Celo</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/block-m3/BlockM3.Nethereum.Celo</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>nethereum celo blockchain ethereum net</PackageTags>
+    <PackageLicenseExpression></PackageLicenseExpression>
+    <Version>1.0.0</Version>
+    <FileVersion>1.0.0.0</FileVersion>
   </PropertyGroup>
-
+  
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard1.1|AnyCPU'">
     <DefineConstants>TRACE;PCL</DefineConstants>
   </PropertyGroup>

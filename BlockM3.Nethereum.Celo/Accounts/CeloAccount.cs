@@ -16,7 +16,7 @@ namespace BlockM3.Nethereum.Celo.Accounts
         public BigInteger? GatewayFee { get; set; }
 
 
-        public static CeloAccount LoadFromKeyStore(string json, string password, BigInteger? chainId = null)
+        public static new CeloAccount LoadFromKeyStore(string json, string password, BigInteger? chainId = null)
         {
             var keyStoreService = new KeyStoreService();
             var key = keyStoreService.DecryptKeyStoreFromJson(password, json);
