@@ -1,5 +1,5 @@
 # BlockM3.Nethereum.Celo
-Nethereum Extensions Library Supporting Celo Network
+Nethereum Extension Library Supporting Celo Network
 
 
 Sloopy first work, for our internal usage.
