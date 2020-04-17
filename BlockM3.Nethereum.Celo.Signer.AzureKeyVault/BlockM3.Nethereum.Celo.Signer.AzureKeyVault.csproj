@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netcoreapp2.1;netcoreapp3.1</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+    <PackageReference Include="Nethereum.Signer.AzureKeyVault">
+      <Version>3.7.1</Version>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp3.1'">
+    <PackageReference Include="Microsoft.Azure.KeyVault">
+      <Version>3.0.5</Version>
+    </PackageReference>
+    <PackageReference Include="Nethereum.Signer.AzureKeyVault">
+      <Version>3.7.1</Version>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp2.1'">
+    <PackageReference Include="Microsoft.Azure.KeyVault">
+      <Version>3.0.5</Version>
+    </PackageReference>
+    <PackageReference Include="Nethereum.Signer.AzureKeyVault">
+      <Version>3.7.1</Version>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlockM3.Nethereum.Celo\BlockM3.Nethereum.Celo.csproj" />
+  </ItemGroup>
+
+</Project>
