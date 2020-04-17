@@ -83,8 +83,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <Compile Remove="Signer\CeloTransaction.cs" />
-  </ItemGroup>
-
 </Project>
